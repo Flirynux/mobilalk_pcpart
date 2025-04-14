@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569857343840",
+    "project_id": "partpiker-fa276",
+    "storage_bucket": "partpiker-fa276.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569857343840:android:986938d00101cdd6f01e05",
+        "android_client_info": {
+          "package_name": "com.example.partpiker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlCbPgJHyavWULJuqtR9oHKwTQQvpgah0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

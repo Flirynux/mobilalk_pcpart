@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PartPiker</string>
+    <string name="email">Email</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztráció</string>
+    <string name="passwordConfirm">Jelszó mégegyszer</string>
+    <string name="guestContinue">Folytatás vendégként</string>
+    <string name="logo">Logo</string>
+</resources>
