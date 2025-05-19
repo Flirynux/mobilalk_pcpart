@@ -5,11 +5,14 @@ public class RAM extends Part{
     private int speed;
     private String datarate;
 
-    public RAM(String manufacturer, String name, String datarate, int size, int speed) {
-        super(manufacturer, name);
+    public RAM(String id, String manufacturer, String name, String datarate, int size, int speed) {
+        super(id,manufacturer, name);
         this.datarate = datarate;
         this.size = size;
         this.speed = speed;
+    }
+
+    public RAM() {
     }
 
     public String getDatarate() {

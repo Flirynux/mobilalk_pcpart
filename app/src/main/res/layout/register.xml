@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".Activities.RegisterActivity">
 
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="409dp"
+        android:layout_height="123dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483"
+        app:srcCompat="@drawable/logo" />
+
     <EditText
         android:id="@+id/editTextPasswordReg"
         android:layout_width="0dp"
@@ -69,6 +81,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg2" />
+
+    <Button
+        android:id="@+id/switchToLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="switchToLogin"
+        android:text="Van már fiókom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/textView4"

@@ -16,12 +16,17 @@ import com.example.partpiker.Parts.RAM;
 import java.util.List;
 public class ListRowAdapter extends RecyclerView.Adapter<ListRowAdapter.PartViewHolder>{
 
+    public interface OnPartSelectedListener {
+        void onPartSelected(int part);
+    }
     private Context context;
     private List<Part> partList;
+    private OnPartSelectedListener listener;
 
-    public ListRowAdapter(Context context, List<Part> partList) {
-        this.context = context;
+    public ListRowAdapter(List<Part> partList, Context context, OnPartSelectedListener listener) {
         this.partList = partList;
+        this.context = context;
+        this.listener = listener;
     }
 
     @NonNull
@@ -43,7 +48,9 @@ public class ListRowAdapter extends RecyclerView.Adapter<ListRowAdapter.PartView
 
         holder.selectButton.setOnClickListener(v -> {
             Toast.makeText(context, part.getName() + " selected!", Toast.LENGTH_SHORT).show();
-            // You can add callback to pass selection to your activity
+            if (listener != null) {
+                listener.onPartSelected(position);
+            }
         });
     }
 

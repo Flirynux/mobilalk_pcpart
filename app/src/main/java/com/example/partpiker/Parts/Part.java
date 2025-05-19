@@ -4,12 +4,26 @@ package com.example.partpiker.Parts;
 import java.io.Serializable;
 
 public class Part implements Serializable {
+    private String id;
     private String name;
     private String manufacturer;
 
-    public Part(String manufacturer, String name) {
+    public Part(String id, String manufacturer, String name) {
+        this.id = id;
         this.manufacturer = manufacturer;
         this.name = name;
+    }
+
+    public Part() {
+
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getManufacturer() {

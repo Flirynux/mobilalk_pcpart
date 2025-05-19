@@ -10,8 +10,8 @@ public class CPU extends Part{
     private int max_ram_GB;
     private float max_pcie;
 
-    public CPU(String manufacturer, String name, float base_speed, float boost_speed, int cores, float max_pcie, int max_ram_GB, String socket, int threads) {
-        super(manufacturer, name);
+    public CPU(String id, String manufacturer, String name, float base_speed, float boost_speed, int cores, float max_pcie, int max_ram_GB, String socket, int threads) {
+        super(id,manufacturer, name);
         this.base_speed = base_speed;
         this.boost_speed = boost_speed;
         this.cores = cores;
@@ -19,6 +19,10 @@ public class CPU extends Part{
         this.max_ram_GB = max_ram_GB;
         this.socket = socket;
         this.threads = threads;
+    }
+
+    public CPU(){
+        super();
     }
 
     public float getBase_speed() {

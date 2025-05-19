@@ -16,11 +16,11 @@ public class MOBO extends Part{
     private int pcie_x1_slots;
     private int fan_connectors;
 
-    public MOBO(String manufacturer, String name, String chipset, String cpu_socket,
+    public MOBO(String id, String manufacturer, String name, String chipset, String cpu_socket,
                 int fan_connectors, String form_factor, int max_ram_GB, int max_ram_speed_MHz,
                 int nvme_slots, int pcie_ver, int pcie_x16_slots, int pcie_x1_slots,
                 int pcie_x4_slots, int ram_slots, String ram_ver, int sata_slots) {
-        super(manufacturer, name);
+        super(id,manufacturer, name);
         this.chipset = chipset;
         this.cpu_socket = cpu_socket;
         this.fan_connectors = fan_connectors;
@@ -35,6 +35,9 @@ public class MOBO extends Part{
         this.ram_slots = ram_slots;
         this.ram_ver = ram_ver;
         this.sata_slots = sata_slots;
+    }
+
+    public MOBO() {
     }
 
     public String getChipset() {
